@@ -1,0 +1,25 @@
+
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI 題庫刷題</title>
+  <style>
+    body { font-family: Arial, sans-serif; padding: 20px; background-color: #eef7fb; }
+    .question-box { background: white; border-radius: 8px; padding: 20px; box-shadow: 0 0 10px rgba(0,0,0,0.1); max-width: 700px; margin: auto; }
+    button { margin: 5px; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer; background: #007BFF; color: white; }
+    button:hover { background: #0056b3; }
+    .result { margin-top: 20px; font-weight: bold; }
+  </style>
+</head>
+<body>
+  <div class="question-box">
+    <h2 id="question-title">載入中...</h2>
+    <div id="options"></div>
+    <div class="result" id="result"></div>
+    <button onclick="nextQuestion()">下一題</button>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
